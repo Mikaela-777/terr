@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Login</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f4f4f4;
+}
+
+.login-box{
+    max-width:400px;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-main{
+    background:#2c6f77;
+    color:white;
+}
+
+.btn-main:hover{
+    background:#245a61;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h3 class="text-center mb-4">Login</h3>
+
+<!-- 🔥 PERBAIKAN DI SINI -->
+<form action="login.php" method="POST">
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" placeholder="Masukkan email" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Masukkan password" required>
+    </div>
+
+    <button type="submit" class="btn btn-main w-100">Login</button>
+
+</form>
+
+<p class="text-center mt-3">
+Belum punya akun? <a href="register.php">Register</a>
+</p>
+
+</div>
+
+</body>
+</html>
